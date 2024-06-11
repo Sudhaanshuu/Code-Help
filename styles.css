@@ -56,6 +56,8 @@ nav ul li a {
 
 .hero-image img {
     max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button {
@@ -65,6 +67,11 @@ nav ul li a {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f57c00;
 }
 
 .features {
@@ -72,17 +79,44 @@ nav ul li a {
     background-color: #f5f5f5;
 }
 
-.feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-.feature img {
-    max-width: 200px;
+.feature {
+    text-align: center;
+}
+
+.feature i {
+    font-size: 3rem;
+    color: var(--secondary-color);
     margin-bottom: 1rem;
+}
+
+.testimonials {
+    padding: 2rem;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimonial-author {
+    font-style: italic;
+    color: #888;
 }
 
 .contact {
@@ -100,6 +134,8 @@ input,
 textarea {
     margin-bottom: 1rem;
     padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
@@ -107,7 +143,13 @@ button {
     color: white;
     padding: 0.5rem;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
 }
 
 footer {
@@ -115,4 +157,15 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
 }
