@@ -40,3 +40,29 @@ document.addEventListener('DOMContentLoaded', function() {
         testimonialSlider.scrollLeft = scrollLeft - walk;
     });
 });
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Hackathon Team Finder
+    const joinButtons = document.querySelectorAll('.join-button');
+    joinButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const teamPost = this.closest('.hackathon-post');
+            const teamTitle = teamPost.querySelector('h3').textContent;
+            alert(`You have requested to join the team: ${teamTitle}`);
+        });
+    });
+
+    // Lost and Found
+    const lostFoundPosts = document.querySelectorAll('.lost-found-post');
+    lostFoundPosts.forEach(post => {
+        post.addEventListener('click', function() {
+            const itemTitle = this.querySelector('h3').textContent;
+            const contactInfo = this.querySelector('.contact-info').textContent;
+            alert(`You have selected the item: ${itemTitle}\n${contactInfo}`);
+        });
+    });
+
+});
