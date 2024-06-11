@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect - Student Problem Solver</title>
+    <title>Campus Connect - Student Problem Solver</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -15,6 +16,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -34,35 +36,62 @@
 
         <section id="features" class="features">
             <h2>Features</h2>
-            <div class="feature">
-                <img src="online-support.jpg" alt="Online support">
-                <h3>Online Support</h3>
-                <p>Get answers to your questions from a community of students and experts.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-comments"></i>
+                    <h3>Online Support</h3>
+                    <p>Get answers to your questions from a community of students and experts.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Offline Support</h3>
+                    <p>Connect with on-campus resources and mentors for personalized assistance.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Collaboration</h3>
+                    <p>Work together with your peers to solve complex problems and share knowledge.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-search"></i>
+                    <h3>Searchable Knowledge Base</h3>
+                    <p>Easily find solutions to common problems with our comprehensive knowledge base.</p>
+                </div>
             </div>
-            <div class="feature">
-                <img src="offline-support.jpg" alt="Offline support">
-                <h3>Offline Support</h3>
-                <p>Connect with on-campus resources and mentors for personalized assistance.</p>
-            </div>
-            <div class="feature">
-                <img src="collaboration.jpg" alt="Collaboration">
-                <h3>Collaboration</h3>
-                <p>Work together with your peers to solve complex problems and share knowledge.</p>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"CampusConnect has been a lifesaver for me. Whenever I'm stuck on a problem, I can always find help here."</p>
+                    <p class="testimonial-author">- John Doe, Computer Science Student</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I love how CampusConnect connects me with other students and experts. It's like having a study group available 24/7."</p>
+                    <p class="testimonial-author">- Sudhanshu umar, Engineering Student</p>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
 
     <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
         <p>&copy; 2024 CampusConnect. All rights reserved.</p>
     </footer>
 
