@@ -226,3 +226,58 @@ footer {
     font-style: italic;
     color: var(--dark-purple);
 }
+
+.meet-my-team {
+    padding: 2rem;
+    background-color: var(--light-purple);
+    text-align: center;
+}
+
+.team-member {
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.coding-projects {
+    padding: 2rem;
+    background-color: var(--light-purple);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    flex: 0 0 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.college-activities {
+    padding: 2rem;
+    background-color: var(--light-purple);
+    text-align: center;
+}
+
+.college-logos img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 1rem;
+}
