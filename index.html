@@ -4,38 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Problem Solver</title>
+    <title>CampusConnect - Student Problem Solver</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to Student Problem Solver</h1>
-            <p>Your go-to platform for solving college problems with offline support.</p>
-            <button onclick="scrollToContent()">Get Started</button>
-        </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">CampusConnect</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="features" class="features-section">
-        <div class="feature">
-            <img src="path/to/image1.jpg" alt="Post Question">
-            <h2>Post Questions</h2>
-            <p>Ask any question related to your studies and get quick responses from fellow students and experts.</p>
-        </div>
-        <div class="feature">
-            <img src="path/to/image2.jpg" alt="Get Answers">
-            <h2>Get Answers</h2>
-            <p>Receive detailed and accurate answers to your questions, both online and offline on campus.</p>
-        </div>
-        <div class="feature">
-            <img src="path/to/image3.jpg" alt="Offline Support">
-            <h2>Offline Support</h2>
-            <p>Connect with on-campus support for face-to-face problem-solving sessions.</p>
-        </div>
-    </section>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to CampusConnect</h1>
+                <p>Your go-to platform for solving college problems, both online and offline.</p>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Students collaborating">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature">
+                <img src="online-support.jpg" alt="Online support">
+                <h3>Online Support</h3>
+                <p>Get answers to your questions from a community of students and experts.</p>
+            </div>
+            <div class="feature">
+                <img src="offline-support.jpg" alt="Offline support">
+                <h3>Offline Support</h3>
+                <p>Connect with on-campus resources and mentors for personalized assistance.</p>
+            </div>
+            <div class="feature">
+                <img src="collaboration.jpg" alt="Collaboration">
+                <h3>Collaboration</h3>
+                <p>Work together with your peers to solve complex problems and share knowledge.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Student Problem Solver. All rights reserved.</p>
+        <p>&copy; 2024 CampusConnect. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
